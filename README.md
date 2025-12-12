@@ -28,13 +28,30 @@ The Custom Emoji Auditor is a solution designed to fetch, audit, and preview cus
    * Search for **"Google Chat API"**, select it, and click **Enable**.
    * Search for **"Admin SDK API"**, select it, and click **Enable**.
 
-3. **Configure OAuth Consent Screen (Internal):**
+3. **Configure Chat API app**
+   * In Google CHat API, click `Manage`, then `Configuration`Tab.
+   * Fill in the required fields (these are arbitrary for an internal script but mandatory for the API to work):
+      * Disable `Build this Chat app as a Workspace add-on.`
+      * App name: Enter `Emoji Auditor`.
+      * Avatar URL: Enter any dummy image URL (e.g., https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Chat_icon_%282023%29.svg/995px-Google_Chat_icon_%282023%29.svg.png) or upload a placeholder.
+      * Description: Enter `Internal Audit Tool`.
+      * Interactive features `Enabled` & `Join spaces and group conversations`
+      * Connection settings: Select App URL and enter a dummy URL (e.g., https://example.com). Note: The form requires it. & Authentication Audience `HTTP endpoint Url`
+      * Visibility: Ensure "Make this Chat app available to specific people and groups..." is unchecked (or check it and add your email), but usually, the default settings work for API access.
+
+Click Save at the bottom.
+
+
+4. **Configure OAuth Consent Screen (Internal):**
    * Go to **APIs & Services > OAuth consent screen**.
-   * Select **Internal** (restricts use to users in your org) and click **Create**.
+   * Get started
    * **App Name:** `Emoji Auditor`.
    * **User Support Email:** Select your email.
+   * Select **Internal** (restricts use to users in your org)
    * **Developer Contact Info:** Enter your email.
-   * Click **Save and Continue**.
+   * Check `I agree to the Google API Services: User Data Policy`
+   * click **Continue**.
+   * Click **Create**.
 
 ### Phase 2: Google Sheet & Script Initialization
 1. **Create the Spreadsheet:**
