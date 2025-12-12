@@ -1,0 +1,14 @@
+.clasp.json
+.DS_Store
+.Trash
+.config
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+__pycache__/
+*.pyc
+venv/
+.env
+.vscode/
+.idea/
