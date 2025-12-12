@@ -95,6 +95,7 @@ You must manually declare the script's permissions via the manifest file.
    * Select your account.
    * *Note:* If you see "Google hasn't verified this app" (expected for internal scripts), click **Advanced > Go to Emoji Audit Script (unsafe)**.
    * Review the permissions (Admin Reports, Chat, Sheets, External Request) and click **Allow**.
+   * This note might appear as a header `Warning: Some formulas are trying to send and receive data from external parties.`, click `Allow access`
 
 ## Use Case
 Once deployed, the tool performs the following actions:
